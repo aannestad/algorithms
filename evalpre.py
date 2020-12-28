@@ -2,9 +2,7 @@
 
 Example: evalpre('1+2*3') returns 9.
 
-Author: Hans Martin Aannestad
-
-"""
+Author: Hans Martin Aannestad """
 
 # Integer class with equal operator precedence
 class Int:
