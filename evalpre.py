@@ -1,4 +1,4 @@
-""" Evaluate integer expressions with equal operator        precedence. Supported operators: +,-,*,/.
+""" Evaluate integer expressions with equal operator precedence. Supported operators: +,-,*,/.
 
 Example: evalpre('1+2*3') returns 9.
 
@@ -23,7 +23,7 @@ class Int:
     def __mul__(self,b):
         return Int(self.val * b.val)
 
-    # // as Division
+    # // as division
     def __truediv__(self,b):
         return Int(self.val / b.val)
 
@@ -32,7 +32,7 @@ def evalpre(expression):
     """Evaluate integer expression (+-*/)"""
 
     # Replace operators
-    expression = expression.replace("+","//").replace       ("-","%")
+    expression = expression.replace("+","//").replace("-","%")
 
     # Wrap expression to Int class
     expr = ""
